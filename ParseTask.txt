@@ -1,0 +1,20 @@
+!PROGRAMM[OUT=0];
+@New1, New2, New3, New4 = Nefile.NIL;
+@KEY = 'HELLO WORLD';
+@TEST = SHIFER.ENDCODE;
+@APP = PRINT_SERVICE.PRINT[KEY];
+ 
+@PHOTO = 'simpleExample.png'; 
+if TkinterDisplay: {@TkinterDisplay._Call_Tkinter_;};
+if ASCLII_ART: { 
+    @IMAGE = ASCLII_ART.PHOTO_TO_ASCII[PHOTO]; 
+    @ASCLII_ART.PHOTO_RESULT[IMAGE];
+}; 
+
+if SHIFER: {  
+    @RANDOM_SHIFER = SHIFER.ENDCODE; 
+    @PRINT_SERVICE.PRINT[RANDOM_SHIFER];
+};
+!PROGRAMM[OUT=1];
+
+    
